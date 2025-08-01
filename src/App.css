@@ -180,8 +180,15 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
+  color: #333;
   font-size: 1rem;
   transition: all 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #666;
+  opacity: 1;
 }
 
 .form-group input:focus,
@@ -446,6 +453,7 @@ body {
   max-height: 90vh;
   overflow-y: auto;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  color: #333;
 }
 
 .modal-sm { max-width: 400px; }
@@ -494,6 +502,20 @@ body {
   width: 90vw;
   background: white;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+/* Ensure all dialog text is dark */
+.seal-dialog *,
+.letgo-dialog * {
+  color: inherit;
+}
+
+.seal-dialog h2,
+.seal-dialog h3,
+.letgo-dialog h2,
+.letgo-dialog h3 {
+  color: #333;
 }
 
 .seal-dialog::backdrop,
@@ -512,6 +534,13 @@ body {
   padding: 1.5rem 1.5rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
+}
+
+.dialog-header h2,
+.dialog-header h3,
+.dialog-header .dialog-title {
+  margin: 0;
+  color: #333;
 }
 
 .dialog-body {
@@ -539,6 +568,7 @@ body {
 .warning-text {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  color: #333;
 }
 
 .warning-description {
@@ -555,6 +585,7 @@ body {
   align-items: flex-start;
   gap: 0.5rem;
   cursor: pointer;
+  color: #333;
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -771,6 +802,28 @@ body {
   align-items: center;
 }
 
+.dialogue-item input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.dialogue-item input::placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+.dialogue-item input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
 .btn-remove-dialogue {
   background: #e74c3c;
   color: white;
@@ -805,6 +858,12 @@ body {
   padding: 2rem;
   max-width: 400px;
   width: 90vw;
+  color: #333;
+}
+
+.lock-dialog h3,
+.lock-dialog p {
+  color: #333;
 }
 
 /* First Encounter View */
@@ -865,6 +924,10 @@ body {
   gap: 0.5rem;
 }
 
+.dialogue-text {
+  color: #333;
+}
+
 .dialogue-marker {
   margin-top: 0.1rem;
 }
@@ -878,6 +941,7 @@ body {
 
 .story-paragraph {
   margin: 0 0 1rem 0;
+  color: #333;
 }
 
 .story-paragraph:last-child {
