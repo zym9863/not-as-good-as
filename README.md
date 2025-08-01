@@ -1,5 +1,7 @@
 # 不如 Not As Good As
 
+[English](./README_EN.md) | 中文
+
 一个以“仪式感”帮助情绪告别与珍藏的轻应用。  
 技术栈：React + TypeScript + Vite，包管理器：pnpm。
 
